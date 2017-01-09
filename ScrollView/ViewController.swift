@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             imageView.frame=CGRect(x:newX-75,y : (ScrollViewObj.frame.size.height/2)-75,width:150,height:150)
             
         }
-        ScrollViewObj.clipsToBounds = false
+        ScrollViewObj.clipsToBounds = false //this does the trick
         ScrollViewObj.contentSize=CGSize(width: contentWidth, height: view.frame.size.width)
         
     }
